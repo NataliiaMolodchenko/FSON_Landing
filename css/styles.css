@@ -1,10 +1,20 @@
 * {
     font-family: "Montserrat", Helvetica;
 }
-h1,h2,h3,h4,h5,h6{
-    margin-top: ;
-    margin-bottom: ;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+a {
+    margin-top: 0;
+    margin-bottom: 0;
 }
+
 ul,
 li {
     list-style-type: none;
@@ -19,6 +29,7 @@ a {
     width: 1136px;
     padding-left: 33px;
     padding-right: 33px;
+    margin: 0 auto;
 }
 
 .hero-banner-title,
@@ -53,7 +64,7 @@ a {
 
 .button-primary:hover,
 .button-secondary:hover,
-.text-highlight{
+.text-higlight {
     color: #FD9222;
 }
 
@@ -82,10 +93,12 @@ button {
     font-size: 14px;
     border-radius: 100px;
     padding: 14px 40px;
+    border: none;
 }
 
 .button-secondary {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: transparent;
+    border: #fff solid 1px;
 }
 
 /* Navigation section start */
@@ -101,7 +114,7 @@ button {
 
 .header-navigation-logo-italic {
     font-style: italic;
-    }
+}
 
 .header {}
 
@@ -111,6 +124,7 @@ button {
 
 /* Navigation section end */
 
+
 /* Hero section start */
 .hero-banner {
     background-image: url(./hero-banner.jpg);
@@ -118,15 +132,23 @@ button {
     height: 600px;
     background-size: contain;
     border-radius: 20px;
+    margin-bottom: 72px;
 }
 .hero-banner-title {
     letter-spacing: -0.03em;
-    padding-top: 381px;
     max-width: 484px;
-    margin-bottom: 34px;
+    padding-top: 381px;
+    margin-bottom: 32px;
 }
 
-.hero-banner-button-scroll-image {}
+.hero-banner-button-scroll {
+    padding-left: 585px;
+}
+
+.hero-banner-button-scroll span {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 /* Hero section end */
 
@@ -136,17 +158,23 @@ button {
     background-color: #1e1823;
 }
 
-.benefits-list {}
-
-.benefits-list-item {
+.benefits-list {
     padding: 50px;
 }
-.benefits-list-item-image{
-    padding-bottom: 22px;
+
+.benefits-list-item-image {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding: 15px;
 }
-.benefits-title{
-    
+
+.benefits-list-item {}
+
+.benefits-title {
+    padding-bottom: 18px;
+    padding-top: 22px;
 }
+
 .benefits-title,
 .review-list-item-title,
 .recipe-subtitle {
@@ -182,13 +210,13 @@ button {
 .taste-subtitle {
     font-size: 14px;
     line-height: 129%;
-    text-align: center;
     color: #111111;
-    text-align: center;
     max-width: 486px;
-    margin-bottom: 28px;
+    margin-bottom: 50px;
 }
-
+.text-highlight{
+    color: #fd9222;
+}
 .taste-list {}
 
 .taste-list-item {}
